@@ -1,11 +1,12 @@
 var  app = require('../app');
-var request = require("request");
+// var request = require("request");
 var supertest = require("supertest");
-var base_url = "http://localhost:7000/";
+// var base_url = "http://localhost:7000/";
+
 
 
 describe("Express Server API", function () {
-  describe('should return users json on get /users', function() {
+  describe('should return profile json on get /profile', function() {
     it("returns status code 200", function (done) {
       supertest(app)
         .get('/profile')
